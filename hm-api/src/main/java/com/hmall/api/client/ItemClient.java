@@ -1,11 +1,9 @@
-package com.hmall.cart.client;
+package com.hmall.api.client;
 
 
-
-import com.hmall.cart.domain.dto.ItemDTO;
+import com.hmall.api.dto.ItemDTO;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 import java.util.List;
