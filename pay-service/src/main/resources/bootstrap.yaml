@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: pay-service  # 微服务连接注册中心的服务名
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.21.132:8848 # nacos地址
+      config:
+        file-extension: yaml
+        shared-configs:
+          - dataId: shared-jdbc.yaml
+          - dataId: shared-log.yaml
+          - dataId: shared-swagger.yaml
