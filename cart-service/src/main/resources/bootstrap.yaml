@@ -12,3 +12,4 @@ spring:
           - dataId: shared-jdbc.yaml
           - dataId: shared-log.yaml
           - dataId: shared-swagger.yaml
+          - dataId: shared-seata.yaml
