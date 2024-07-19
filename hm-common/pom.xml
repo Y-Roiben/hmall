@@ -85,6 +85,11 @@
             <artifactId>spring-rabbit</artifactId>
             <scope>provided</scope>
         </dependency>
+        <!--消息发送-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
         <!--json处理-->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
