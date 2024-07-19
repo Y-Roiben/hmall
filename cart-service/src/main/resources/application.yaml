@@ -1,10 +1,21 @@
 server:
   port: 8082
+  tomcat:
+    threads:
+      max: 50
+    accept-count: 50  # 最大排队数
+    max-connections: 100  # 最大连接数
 feign:
   okhttp:
     enabled: true # 开启feign对okhttp的连接池支持
-
-
+  sentinel:
+    enabled: true  # 开启sentinel对feign的支持
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090  # sentinel控制台地址
+      http-method-specify: true  # 开启sentinel对http请求方式的支持 get/post
 hm:
   db:
     host: 192.168.21.132
